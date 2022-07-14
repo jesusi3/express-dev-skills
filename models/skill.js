@@ -1,9 +1,9 @@
 const req = require('../controllers/skills')
 
 const skills = [
-    {id: 125223, skill: 'Feed Dogs', done: true},
-    {id: 127904, skill: 'Learn Express', done: false},
-    {id: 139608, skill: 'Buy Milk', done: false}
+    {id: 120223, skill: 'Karate', mastery: true},
+    {id: 127904, skill: 'Taekwando', mastery: false},
+    {id: 139608, skill: 'Brazilian Jiu Jitsu', mastery: false}
   ];
   
   module.exports = {
@@ -15,8 +15,9 @@ const skills = [
     id = parseInt(id);
     return skills.find(skill => skill.id === id);
   }
-
+  
   function getAll() {
     return skills;
   }
+  console.log(getAll());
  

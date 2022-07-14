@@ -5,13 +5,13 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1>skills</h1>
+    <h1>Skills list</h1>
     <ul>
       <% skills.forEach(function(s) { %>
         <li>
           <a href="/skills/<%= s.id %>"><%= s.skill %></a>
             - 
-          <%= s.done ? 'done' : 'not done' %>
+          <%= s.mastery ? 'EXPERT' : 'NOOB' %>
         </li>
       <% }); %>
     </ul>
