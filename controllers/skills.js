@@ -2,7 +2,25 @@ const Skill = require('../models/skill');
 
 module.exports = {
     index,
-    show
+    show,
+    new: newSkill,
+    create,
+    delete: deleteSkills
+}
+
+function deleteSkills(req, res) {
+    Skill.deleteOne(req.params.id);
+    res.redirect('/skills');
+}
+
+function create(req, res) {
+    console.log(req.body);
+    Skill.create(req.body);
+    res.redirect('/skills');
+}
+
+function newSkill(req, res) {
+    res.render('skills/new');
 }
 
 function show(req, res) {

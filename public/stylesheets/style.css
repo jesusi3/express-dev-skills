@@ -1,8 +1,30 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hotpink;
+}
+h1{
+font-size: 50px;
 }
 
 a {
-  color: #00B7FF;
+  color: white;
+  font-size: x-large;
 }
+li{
+  font-size: larger;
+  list-style: none;
+}
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete-form button {
+  color: red;
+}
+
