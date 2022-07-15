@@ -23,7 +23,6 @@ const skills = [
   function create (skill) {
     //create a skill
     skill.id = Date.now() %1000000;
-    //so the new skills won't be donw
     skill.mastery = false;
     skills.push(skill);
   }
